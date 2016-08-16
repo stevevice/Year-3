@@ -25,7 +25,8 @@ bool BaseApplication::createWindow(const char * title, int width, int height)
 	auto major = ogl_GetMajorVersion();
 	auto minor = ogl_GetMinorVersion();
 	printf("GL: %i.%i\n", major, minor);
-	glClearColor(0.25f, 0.25f, 0.25f, 1);
+
+	glClearColor(0.25f, 0.25f, 0.25f, 1);
 	glEnable(GL_DEPTH_TEST); // enables the depth buffer
 	return false;
 }
