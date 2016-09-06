@@ -1,10 +1,11 @@
-#include <MyApplication.h>
+#include <BaseApplication.h>
+#include <SolarSystemApplication.h>
 
 int main() 
 {	
-	//BaseApplication * app = new MyApplication();
-	//if (app->startup())
-	//	app->run();
-	//app->shutdown();
+	BaseApplication * app = new SolarSystemApplication();
+	if (app->startup())
+		app->run();
+	app->shutdown();
 	return 0;
 }
